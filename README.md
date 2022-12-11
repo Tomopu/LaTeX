@@ -26,7 +26,7 @@ VSCode をダウンロードしていない方は, [https://code.visualstudio.co
 #### **2-1. LaTeX Workshop をインストール**
 **LaTeX Workshop** とは, LaTeX のコマンド補完をはじめ, シンタックスハイライトやファイル保存時に自動コンパイルをしてくれる便利な拡張機能です.  
 VSCode 内の Marketplace で "LaTeX Workshop" と検索をしてインストールしてください.  
-![Test Image 1](image/latex_workshop.png)
+![LaTeX Workshop](image/latex_workshop.png)
 
 #### **2-2. LaTeX Workshop の設定**
 VSCode の設定から "latex tools" と検索し, 「setting.jsonで編集」を選択してください.
