@@ -1,0 +1,36 @@
+\documentclass[a4j]{jarticle}
+
+% プリアンブル部
+
+\title{はじめての\LaTeX}
+\date{\today}
+\author{自分の名前}
+
+\begin{document}
+
+  \maketitle
+  
+  \LaTeX は最高級の自動組版システムである.
+  \LaTeX では, 数式を美しく表示できる他, 章番号, 節番号などを自動的につけることができる.
+  また, 目次, 索引, 文献リストも自動的に作ることができる.
+  なんと便利なのだろう.
+
+  \LaTeX では, \LaTeX ファイル内で1行改行しても, PDF ファイル内では改行されない.\\
+  改行をするには, バックスラッシュを改行したい場所に2つ入力するか,
+
+  1行以上の空白行を入力する必要がある.
+
+  \section{定積分の定義}
+  関数$y=f(x)$は, 閉区間$[a, b]$で定義され, $f(x)\ge0$であるとする.
+  この区間を$n$個の小区間に分け, 小区間$[x_{k-1}, x_k]$の幅を$\Delta x_k = x_k - x_{k-1}$, 小区間の最大値を$|\Delta| = \max{\Delta x_k}$ とするとき, $f(x)$の定積分は
+  \[
+    \int_a^b f(x)dx = \lim_{|\Delta| \to 0} \sum_{n}^{k=1}f(x_k)\Delta x_k
+  \]  
+  と定義される\cite{math2022}.
+
+  \begin{thebibliography}{99}
+    \bibitem{math2022}
+    数学太郎, 微分積分学の基礎, Hoge出版, 2022.
+  \end{thebibliography}
+
+\end{document}
