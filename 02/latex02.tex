@@ -1,0 +1,94 @@
+\documentclass[a4j, titlepage]{jarticle}
+
+% プリアンブル部
+\usepackage{color} % 文字に色をつける
+\usepackage{ascmac} % 枠付き文章
+\usepackage{fancybox} % 枠付き文章
+
+\title{\LaTeX の基本機能}
+\date{\today}
+\author{自分の名前}
+
+\begin{document}
+  \maketitle % タイトルの出力
+
+  % 目次の出力
+  \tableofcontents
+  \clearpage
+
+  \section{文字サイズを変更する}
+  文書全体の文字サイズを変更したい場合は, ドキュメントオプションとして文字サイズを指定する.
+  
+  また, {\Large 大きい文字}のように相対的に文字サイズを変更したり,\\
+  % \fontsize{21pt}{1cm}\selectfont
+  絶対的に文字サイズと行送りを指定したりすることができる.
+
+  % \fontsize{10pt}{0cm}\selectfont
+  
+
+  \section{文字の色を変更する}
+  文字の色を変更するためには, まずはプリアンブル部内で color パッケージを読み込む必要がある.
+
+  \subsection{文章全体の色を変更する}
+  \color{red}
+  color パッケージを読み込んんだあとは, color コマンドを用いることで文章の色を変更することができる.
+  ただし, 色を再度設定するまでは, 直前に設定した色が反映されるため, 注意が必要である.
+  \color{black}
+
+  \subsection{部分的に色を変更する}
+  また, \textcolor{blue}{部分的に文字の色を変更} することもできる.
+  もちろん, \textcolor{green}{$c^2 = a^2 + b^2$}のように数式の色を変えることも可能だ.
+
+  \section{文字のレイアウトを変更する}
+  \LaTeX では, \textrm{roman}, \textsf{sans serif}, \texttt{typewriter}, \textmc{明朝体}, \textgt{ゴシック体} のファミリーを指定することができる.
+  
+  また, \textbf{文字の太さを変えたり}, \textup{upshape 立体}, \textit{italic イタリック体}, \textsc{Small Capital スモールキャップ体}, \textsl{slanted 斜体} のように字形を変えたりすることも\underline{可能}だ.
+
+  \section{箇条書き}
+  箇条書きには, 大きく分けて \textbf{itemize}, \textbf{enumerate}, \textbf{description} の3つがある.
+
+  \subsection{itemize}
+  運動の法則として,
+  \begin{itemize}
+      \item 運動の第一法則とは, 慣性の法則のことである.
+      \item 運動の第二法則とは, 運動方程式のことである.
+      \item 運動の第三法則とは, 作用反作用の法則のことである.
+  \end{itemize}
+
+  \subsection{enumerate}
+  運動の法則として,
+  \begin{enumerate}
+      \item 運動の第一法則とは, 慣性の法則のことである.
+      \item 運動の第二法則とは, 運動方程式のことである.
+      \item 運動の第三法則とは, 作用反作用の法則のことである.
+  \end{enumerate}
+
+  \subsection{description}
+  運動の法則として,
+  \begin{description}
+    \item[運動の第一法則] 慣性の法則のことである.
+    \item[運動の第二法則] 運動方程式のことである.
+    \item[運動の第三法則] 作用反作用の法則のことである.
+  \end{description}
+
+  \section{枠付き文章}
+  \begin{screen}
+    ここに枠付き文章に内容を記述する.\\
+    もちろん, 数式$a = b + c$も使うことができる.
+  \end{screen}
+
+  \begin{itembox}[l]{タイトル名}
+    ここに枠付き文章の内容を記述する.\\
+    タイトルをつけることで, その枠が何の説明をしているかが明確になる.\\
+    もちろん, 数式$a = b + c$も使うことができる.
+  \end{itembox}
+
+  \begin{shadebox}
+    ここに枠付き文章の内容を記述する.\\
+    影があると, 枠の存在感がアップする.\\
+    もちろん, 数式$a = b + c$も使うことができる.
+  \end{shadebox}
+    
+  
+
+\end{document}
