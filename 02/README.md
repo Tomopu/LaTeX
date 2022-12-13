@@ -196,7 +196,7 @@ LaTeXでは, 箇条書きの種類として, **itemize**, **enumerate**, **descr
 より高度な箇条書きについては, 以下の参考文献を参照してください.
 
 ### **参考文献**
-[1] LaTeX 箇条書き, [http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php).
+[3] LaTeX 箇条書き, [http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php).
 
 ## **7. 枠付き文章**
 次は, 文章を枠で囲む「枠付き文章」についてです.  
@@ -242,7 +242,7 @@ shadebox は，枠の影を表示します．
 他の枠線に関しては, 以下の参考文献を参照してください.
 
 ### **参考文献**
-[1] LaTeX 枠付き文章, [http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/box/box.php](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/box/box.php).
+[4] LaTeX 枠付き文章, [http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/box/box.php](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/box/box.php).
 
 
 
